@@ -1,0 +1,34 @@
+\documentclass[
+     12pt,         % font size
+     a4paper,      % paper format
+     BCOR=10mm,     % binding correction
+     DIV=14,        % stripe size for margin calculation
+%     liststotoc,   % table listing in toc
+%     bibtotoc,     % bibliography in toc
+%     idxtotoc,     % index in toc
+%     parskip       % paragraph skip instad of paragraph indent
+     ]{scrreprt}
+
+\input{../preamble.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+   \begin{Large}
+       \noindent \textbf{ Nomenclature }
+       \hspace{2cm}
+   \end{Large}
+
+   \begin{flalign*}
+        &\| \cdot \|&                       &\text{Euclidean Norm on } \R^d&\\
+        &\langle \cdot, \cdot \rangle&      &\text{Scalar product on } \R^d&\\
+        &\R_{\ge 0}&                        &\text{Positive real numbers}&\\
+        &\lambda^d&                         &\text{Lebesgue measure on} \R^d&\\
+        &\B^d &                             &\text{Borel} \sigma\text{-algebra on } \R^d&\\
+        &\Pot(\cdot)&                       &\text{Power set of a set}&\\
+        &|\cdot|&                           &\text{Cardinality of a set}&\\
+        &\LL(\mu)&                          &\mu \text{-integrable functions}&\\
+    \end{flalign*}
+
+
+\end{document}
