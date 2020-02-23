@@ -1,0 +1,49 @@
+\documentclass[
+     12pt,         % font size
+     a4paper,      % paper format
+     BCOR=10mm,     % binding correction
+     DIV=14,        % stripe size for margin calculation
+%     liststotoc,   % table listing in toc
+%     bibtotoc,     % bibliography in toc
+%     idxtotoc,     % index in toc
+%     parskip       % paragraph skip instad of paragraph indent
+     ]{scrreprt}
+
+\input{../preamble.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%
+%   \begin{large}
+%       \noindent \textbf{Notations and Nomenclature} \\
+%       \vspace{1cm}
+%   \end{large}
+%
+%
+\TODO{Motivation for Optimal Transport \& recall some definitions from measure theory}
+%    We recall some definitions and results from measure theory. 
+%    \bigskip
+    
+    %
+    \noindent Let $(X, \A)$ be a measurable space and $\mu, \tilde \mu$ measures on $X$.  We say that $\mu$ is absolutely continuous with respect to $\tilde \mu$, if
+    %if every set with measure zero with respect to $\tilde \mu$ has measure zero with respect to $\mu$. This means 
+    \[\tilde \mu(A) = 0 \Rightarrow \mu(A) = 0 \quad \quad  \forall A\in \A. \]
+    and denote this by $\mu \ll \tilde \mu$.
+    %
+    Let $(X, \A, \mu)$ be a measure space and $(Y, \U)$ a measurable space. For a measurable function $T: X \to Y $, 
+    we denote by $T_{\#}\mu$ the pushforward measure on $Y$ induced by $T$, i.e
+    \[T_{\#}\mu(B) = \mu(T^{-1}(B)) \quad \quad \forall B \in \U. \]
+    %
+%    \noindent As $S$ is a finite set, we can write $S = \{s_1,\dots s_{|S|} \}$ and $\nu$ as a finite sum of dirac measures
+%    \[\nu = \sum_{i = 1}^{|S|} {\nu_i \delta_{s_i}} \quad \text{such that} \quad \sum_{i=1}^{|S|}{\nu_i} = 1.  \]
+%    %
+%
+%    \TODO{recall the pushforward measure}
+%    \begin{verbatim}
+%        https://en.wikipedia.org/wiki/Pushforward_measure
+%    \end{verbatim}
+%    
+    \TODO{}
+%    \TODO{DEFINE INTEGRABLE FUNCTIONS L }
+\end{document}

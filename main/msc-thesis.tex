@@ -1,0 +1,319 @@
+\documentclass[
+     12pt,         % font size
+     a4paper,      % paper format
+     BCOR=10mm,     % binding correction
+     DIV=14,        % stripe size for margin calculation
+%     liststotoc,   % table listing in toc
+%     bibtotoc,     % bibliography in toc
+%     idxtotoc,     % index in toc
+%     parskip       % paragraph skip instad of paragraph indent
+     ]{scrreprt}
+
+% Preamble
+\input{preamble.tex}
+
+%% Name for the Table of contents
+%\renewcommand{\contentsname}{Whatever}
+
+% Avoid Problems by including other files
+\usepackage{standalone}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Page numbering
+\pagenumbering{roman} 
+
+%
+\input{Titlepage/titlepage}
+%
+\onehalfspacing
+\thispagestyle{empty}
+\vspace*{100pt}
+
+%
+\input{Einwilligungserklaerung/einwilligungserklaerung}
+
+%
+\newpage
+
+%
+\chapter*{Zusammenfassung}
+\input{Zusammenfassung/zusammenfassung}
+
+%
+\newpage
+
+%
+\chapter*{Abstract}
+\input{Abstract/abstract}
+
+%
+\newpage
+
+
+% Table of contents (Inhaltsverzeichnis)
+\tableofcontents
+\cleardoublepage
+
+%
+\pagenumbering{arabic} 
+
+% List of figures (Abbildungsverzeichnis):
+%\listoffigures
+% List of tables (Tabellenverzeichnis):
+%\listoftables
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\chapter{Einleitung}\label{intro}
+%
+%Dieses Kapitel gibt einen berblick ber die Arbeit. Gerade der
+%Abschnitt zur Motivation soll allgemein verstndlich geschrieben
+%werden. Die Einleitung sollte auch wichtige Referenzen enthalten. 
+%
+%\section{Motivation}
+%
+%Worum geht es? Beispiel(e)! Illustrationen sind hier meist sinnvoll
+%zum Verstndnis. Warum ist das Thema wichtig? In welchem Kontext?
+%
+%\section{Ziele der Arbeit}
+%
+%In diesem Abschnitt sollen neben den Herausforderungen und der
+%Problemstellung insbesondere die Ziele der Arbeit beschrieben werden. 
+%
+%\section{Aufbau der Arbeit}
+%
+%Dieser Abschnitt wird meist recht kurz gehalten und beschreibt im
+%Prinzip nur den Aufbau des Rests der Arbeit. Zum Beispiel: In Kapitel
+%\ref{chap:grundlagen} geben wir einen r die  Grundlagen
+%zu der Arbeit sowber verwandte Arbeiten. In Kapitel
+%\ref{chap:main} stellen wir dann \ldots vor. \ldots etc.
+%
+%
+%\newpage
+%
+%\chapter{Grundlagen und verwandte Arbeiten}
+%\label{chap:grundlagen}
+%
+%Die ersten paar Abschnitte in diesem Kapitelhren in die Grundlagen
+%zur Arbeit ein. Das knnen beispielsweise Grundlagen zu Netzwerken
+%oder zur Informationsextraktion sein. 
+%
+%\section{(Beispiel) Netzwerke}
+%\label{sec:networks}
+%
+%\section{(Beispiel) Informationsextraktion}
+%\label{sec:ie}
+%
+%\section{Verwandte Arbeiten}
+%\label{sec:related}
+%
+%Typischerweise im letzten Abschnitt dieses Kapitels wird dann auf
+%verwandte Arbeiten eingegangen. Entsprechende Arbeiten sind geeignet
+%zu zitieren. Beispiel: Die wurde erstmalig in den Arbeiten von Spitz
+%und Gertz \cite{Spitz2016a} gezeigt \ldots Details dazu werden in
+%dem Buch von Newman zu Netzwerken \cite{Newman2010} erlutert \ldots.
+%
+%\newpage
+%
+% Alternative: put content in separate files
+% Check the difference between including these files using \input{filename} and \include{filename} and see which one you like better
+%\chapter{Einleitung}\label{intro}
+%\input{introduction}
+%
+%\chapter{Voraussetzungen}\label{bg}
+%\input{background}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Nomenclature
+\unsure{ Probably not necessary - Introduce nomenclature and conventions in the text}
+\input{/home/daniel/Studies/MA/thesis/main/Nomenclature/nomenclature} 
+%\newpage
+
+
+% Genearal equations / Motivation
+\input{/home/daniel/Studies/MA/thesis/main/General_Equations/general_equations}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introduction}\label{Introduction}
+\section{Overview/Motivation}
+\section{Related Work}
+\begin{itemize}
+    \item Je nach dem, wie relevant die andere Dokumente sein könnten, relevante Arbeiten citieren. 
+    \item Basic reference, e.g Vill, conference works
+\end{itemize}
+\section{Contribution/Organization of work}
+\begin{itemize}
+    \item Description of the approach.
+    \item Distribution of this work, briefly description of the chapters.
+\end{itemize}
+\section{Background}
+\begin{itemize}
+    \item Change of variable formulas, etc.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Semi-dicrete Optimal Transport}\label{Optimal Transport}
+\TODO{Introduction Optimal Transport}
+
+\section{Problem}
+\TODO{Introduction}
+Problem von SDOT im \uline{Allgemein}
+
+\section{Approach}
+\TODO{Introduction}
+
+\newpage
+\section{Characterization of the Optimal Transport Map}
+\input{Optimal_Transport/Characterization_OTM/characterization_OTM}
+
+\newpage
+\section{Basic Algorithm}
+\input{Optimal_Transport/Basic_Algorithm/basic_algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Multi-Layer Approach}
+
+\section{To Define, Muli-scale?}
+\begin{itemize}
+    \item Decomposition of the target distribution (K-means algorithm - Clustering method)
+    \item Sub/Up-sampling procedure
+    \item Multi-layer model
+\end{itemize}
+
+\input{Multi-Layer/multi-layer}
+
+\section{Algorithm (ASGD)} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Application: Texture Synthesis}
+%\TODO{Introduction}
+%\section{First Level of Synthesis}
+\section{Patch distributions}
+%\TODO{Introduction}
+\subsection{Source Distribution}
+\subsubsection{Gaussian Random Fields (Gaussian Synthesis)}
+\subsubsection{Gaussian Mixture Models}
+\subsubsection{Gaussian patches distribution and properties}
+
+%\begin{itemize}
+%    \item Gaussian Random Fields (Gaussian Synthesis)
+%    \item Gaussian mixture models
+%    \item Gaussian patches distribution
+%    \item Properties
+%\end{itemize}
+
+\subsection{Target Distribution}
+\subsubsection{Emprirical patch distribution and simplifications}
+
+%\begin{itemize}
+%    \item Emprirical patch distribution
+%\end{itemize}
+
+\section{Optimal Transport in Patch Space}
+\subsection{Local Transformations (Patch convolutions)}
+
+%\begin{itemize}
+%    \item Local transformations (patch convolutions) on the Gaussian Synthesis
+%\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Stochastic Optimization}
+%\TODO{Introduction}
+%\section{Average Stochastic Gradient Descent}
+%\subsection{ASGD for the estimation of the multi-layer map}
+%\subsubsection{Sampling on the source distribution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{\sout{Numerical Experiments}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\label{chap:main}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%
+%\chapter{Mein Beitrag}
+%\label{chap:main}
+%
+%Dieses Kapitel stellt meist den Hauptteil der Arbeit dar. Vor dem
+%ersten Abschnitt sollte ein kurzer berblick (ein paar wenige Sze
+%mit Verweise auf nachfolgende Abschnitte) gegeben werden. Beispiel: Im
+%nachfolgenden Abschnitt \ref{sec:overview} wir ein berblick ber die Anforderungen an
+%das Modell gegeben. 
+%
+%\section{berblick und Zielsetzung}
+%\label{sec:overview} 
+%
+%Knapp zwei Seiten, in dem die Anforderungen, die Zielsetzung und die
+%Methoden berblicksartig beschrieben werden. Hier sollte die
+%Beschreibung ``technischer'' bzw.~``formaler'' sein als in der
+%Einleitung, da der Leser nun mit den Grundlagen und verwandten
+%Arbeiten vertraut ist.
+%
+%\section{Erster Teil}
+%\label{sec:teil1}
+%
+%In diesem und den nachfolgenden Abschnitten werden die Beitrge der
+%Arbeit motiviert, formal sauber (oft mathematisch, sprich mit
+%Definitionen etc.) beschrieben, und bei Bedarf mithilfe von Beispielen
+%verdeutlicht. Die Beschreibungen in diesem Kapitel sind meist
+%unabhngig von einer konkreten Realisierung und Daten; diese werden im
+%nachfolgenden Kapitel detailliert.
+%
+%\section{Zweiter Teil}
+%\label{sec:teil2}
+%
+%Usw.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Experimentelle Evaluation}
+%\label{chap:eval}
+%
+%Der Aufbau dieses Kapitels oder dessen Aufteilung in zwei Kapiteln ist
+%stark von dem Thema und der Bearbeitung des Themas
+%abhngig. Beschrieben werden hier Daten, die fr eine Evaluation
+%verwendet wird (Quellen, Beispiele, Statistiken), die Zielsetzung der Evaluation
+%und die verwendeten Mae sowie die Ergebnisse (u.a.~mithilfe von
+%Charts, Diagrammen, Abbildungen etc.)
+%
+%Dieses Kapitel kann auch mit einer Beschreibung der Realisierung eines
+%Systems beginnen (kein Quellcode, maximal Klassendiagramme!).
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Zusammenfassung und Ausblick}
+%\label{chap:concl}
+%
+%Hier werden noch einmal die wichtigsten Ergebnisse und Erkenntnisse
+%der Arbeit zusammengefasst (nicht einfach eine Wiederholung des
+%Aufbaus der vorherigen Kapitel!), welche neuen Konzepte, Methoden und
+%Werkzeuge Neues entwickelt wurden, welche Probleme nun (effizienter)
+%gelst werden knnen, und es wird ein Ausblick auf weiterfhrende
+%Arbeiten gegeben (z.B.~was Sie machen wrden, wenn Sie noch 6 Monate
+%mehr Zeit htten).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References (Literaturverzeichnis):
+% a) Style (with abbreviations: use alpha):
+% see
+% https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_bibliographystyle
+% for the different formats and styles
+%\cite*{Agg07}
+
+\cite{*}
+\bibliographystyle{apalike}
+% b) The File:
+\bibliography{references}
+
+\end{document}

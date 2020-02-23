@@ -1,0 +1,276 @@
+% This template was initially provided by Dulip Withanage.
+% Modifications for the database systems research group
+% were made by Conny Junghans,  Jannik StrÃ¶tgen and Michael Gertz
+
+\documentclass[
+     12pt,         % font size
+     a4paper,      % paper format
+     BCOR10mm,     % binding correction
+     DIV14,        % stripe size for margin calculation
+%     liststotoc,   % table listing in toc
+%     bibtotoc,     % bibliography in toc
+%     idxtotoc,     % index in toc
+%     parskip       % paragraph skip instad of paragraph indent
+     ]{scrreprt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PACKAGES:
+
+% Use German :
+\usepackage[ngerman]{babel}
+% Input and font encoding
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+% Index-generation
+\usepackage{makeidx}
+% Einbinden von URLs:
+\usepackage{url}
+% Special \LaTex symbols (e.g. \BibTeX):
+%\usepackage{doc}
+% Include Graphic-files:
+\usepackage{graphicx}
+% Include doc++ generated tex-files:
+%\usepackage{docxx}
+% Include PDF links
+%\usepackage[pdftex, bookmarks=true]{hyperref}
+
+% Fuer anderthalbzeiligen Textsatz
+\usepackage{setspace}
+
+% hyperrefs in the documents
+\usepackage[bookmarks=true,colorlinks,pdfpagelabels,pdfstartview = FitH,bookmarksopen = true,bookmarksnumbered = true,linkcolor = black,plainpages = false,hypertexnames = false,citecolor = black,urlcolor=black]{hyperref} 
+%\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% OTHER SETTINGS:
+
+% Pagestyle:
+\pagestyle{headings}
+
+% Choose language
+\newcommand{\setlang}[1]{\selectlanguage{#1}\nonfrenchspacing}
+
+
+\begin{document}
+
+% TITLE:
+\pagenumbering{roman} 
+\begin{titlepage}
+
+
+\vspace*{1cm}
+\begin{center}
+\vspace*{3cm}
+\textbf{ 
+\Large Universität Heidelberg\\
+\smallskip
+\Large Institut für Informatik\\
+\smallskip
+\Large Arbeitsgruppe Datenbanksysteme\\
+\smallskip
+}
+
+\vspace{3cm}
+
+\textbf{\large Master-Arbeit} % Bachelor-Arbeit 
+
+\vspace{0.5\baselineskip}
+{\huge
+\textbf{Titel}
+}
+\end{center}
+
+\vfill 
+
+{\large
+\begin{tabular}[l]{ll}
+Name: & Name der Autorin/des Autors\\
+Matrikelnummer: & Matrikelnummer  der Autorin/des Autors\\
+Betreuer: & Name der Betreuerin / des Betreuers\\
+Datum der Abgabe: & \today
+\end{tabular}
+}
+
+\end{titlepage}
+
+\onehalfspacing
+
+\thispagestyle{empty}
+
+\vspace*{100pt}
+\noindent
+Ich versichere, dass ich diese Master-Arbeit selbstständig verfasst und nur die angegebenen
+Quellen und Hilfsmittel verwendet habe und die Grundsätze und
+Empfehlungen ``Verantwortung in der Wissenschaft'' der Universität Heidelberg beachtet wurden. 
+
+\vspace*{50pt}
+\noindent
+
+\underline{\phantom{mmmmmmmmmmmmmmmmmmmm}}
+
+\medskip
+\noindent 
+Abgabedatum: \today
+\newpage
+
+% Add a brief summary of your topic and contributions (Zusammenfassung) in German *and* in English:
+\chapter*{Zusammenfassung}
+\input{zusammenfassung}
+\newpage
+
+\chapter*{Abstract}
+\input{abstract}
+\newpage
+
+% MAIN PART:
+% Table of contents (Inhaltsverzeichnis)
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic} 
+
+% List of figures (Abbildungsverzeichnis):
+%\listoffigures
+% List of tables (Tabellenverzeichnis):
+%\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here, the actual content of your thesis begins
+% You can either put all the text here or use individual files to store the chapters of your thesis.
+% Below are templates for both alternatives.
+
+\chapter{Einleitung}\label{intro}
+
+Dieses Kapitel gibt einen Überblick über die Arbeit. Gerade der
+Abschnitt zur Motivation soll allgemein verständlich geschrieben
+werden. Die Einleitung sollte auch wichtige Referenzen enthalten. 
+
+\section{Motivation}
+
+Worum geht es? Beispiel(e)! Illustrationen sind hier meist sinnvoll
+zum Verständnis. Warum ist das Thema wichtig? In welchem Kontext?
+
+\section{Ziele der Arbeit}
+
+In diesem Abschnitt sollen neben den Herausforderungen und der
+Problemstellung insbesondere die Ziele der Arbeit beschrieben werden. 
+
+\section{Aufbau der Arbeit}
+
+Dieser Abschnitt wird meist recht kurz gehalten und beschreibt im
+Prinzip nur den Aufbau des Rests der Arbeit. Zum Beispiel: In Kapitel
+\ref{chap:grundlagen} geben wir einen Überblick über die  Grundlagen
+zu der Arbeit sowie über verwandte Arbeiten. In Kapitel
+\ref{chap:main} stellen wir dann \ldots vor. \ldots etc.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\chapter{Grundlagen und verwandte Arbeiten}
+\label{chap:grundlagen}
+
+Die ersten paar Abschnitte in diesem Kapitel führen in die Grundlagen
+zur Arbeit ein. Das können beispielsweise Grundlagen zu Netzwerken
+oder zur Informationsextraktion sein. 
+
+\section{(Beispiel) Netzwerke}
+\label{sec:networks}
+
+\section{(Beispiel) Informationsextraktion}
+\label{sec:ie}
+
+\section{Verwandte Arbeiten}
+\label{sec:related}
+
+Typischerweise im letzten Abschnitt dieses Kapitels wird dann auf
+verwandte Arbeiten eingegangen. Entsprechende Arbeiten sind geeignet
+zu zitieren. Beispiel: Die wurde erstmalig in den Arbeiten von Spitz
+und Gertz \cite{Spitz2016a} gezeigt \ldots Details dazu werden in
+dem Buch von Newman zu Netzwerken \cite{Newman2010} erläutert \ldots.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+% Alternative: put content in separate files
+% Check the difference between including these files using \input{filename} and \include{filename} and see which one you like better
+%\chapter{Einleitung}\label{intro}
+%\input{introduction}
+%
+%\chapter{Voraussetzungen}\label{bg}
+%\input{background}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\chapter{Mein Beitrag}
+\label{chap:main}
+
+Dieses Kapitel stellt meist den Hauptteil der Arbeit dar. Vor dem
+ersten Abschnitt sollte ein kurzer Überblick (ein paar wenige Sätze
+mit Verweise auf nachfolgende Abschnitte) gegeben werden. Beispiel: Im
+nachfolgenden Abschnitt \ref{sec:overview} wir ein Überblick über die Anforderungen an
+das Modell gegeben. 
+
+\section{Überblick und Zielsetzung}
+\label{sec:overview} 
+
+Knapp zwei Seiten, in dem die Anforderungen, die Zielsetzung und die
+Methoden überblicksartig beschrieben werden. Hier sollte die
+Beschreibung ``technischer'' bzw.~``formaler'' sein als in der
+Einleitung, da der Leser nun mit den Grundlagen und verwandten
+Arbeiten vertraut ist.
+
+\section{Erster Teil}
+\label{sec:teil1}
+
+In diesem und den nachfolgenden Abschnitten werden die Beiträge der
+Arbeit motiviert, formal sauber (oft mathematisch, sprich mit
+Definitionen etc.) beschrieben, und bei Bedarf mithilfe von Beispielen
+verdeutlicht. Die Beschreibungen in diesem Kapitel sind meist
+unabhängig von einer konkreten Realisierung und Daten; diese werden im
+nachfolgenden Kapitel detailliert.
+
+\section{Zweiter Teil}
+\label{sec:teil2}
+
+Usw.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Experimentelle Evaluation}
+\label{chap:eval}
+
+Der Aufbau dieses Kapitels oder dessen Aufteilung in zwei Kapiteln ist
+stark von dem Thema und der Bearbeitung des Themas
+abhängig. Beschrieben werden hier Daten, die für eine Evaluation
+verwendet wird (Quellen, Beispiele, Statistiken), die Zielsetzung der Evaluation
+und die verwendeten Maße sowie die Ergebnisse (u.a.~mithilfe von
+Charts, Diagrammen, Abbildungen etc.)
+
+Dieses Kapitel kann auch mit einer Beschreibung der Realisierung eines
+Systems beginnen (kein Quellcode, maximal Klassendiagramme!).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Zusammenfassung und Ausblick}
+\label{chap:concl}
+
+Hier werden noch einmal die wichtigsten Ergebnisse und Erkenntnisse
+der Arbeit zusammengefasst (nicht einfach eine Wiederholung des
+Aufbaus der vorherigen Kapitel!), welche neuen Konzepte, Methoden und
+Werkzeuge Neues entwickelt wurden, welche Probleme nun (effizienter)
+gelöst werden können, und es wird ein Ausblick auf weiterführende
+Arbeiten gegeben (z.B.~was Sie machen würden, wenn Sie noch 6 Monate
+mehr Zeit hätten).
+
+
+% References (Literaturverzeichnis):
+% a) Style (with abbreviations: use alpha):
+% see
+% https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_bibliographystyle
+% for the different formats and styles
+
+\bibliographystyle{apalike}
+% b) The File:
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,16 @@
+\begin{thebibliography}{}
+
+\bibitem[Newman, 2010]{Newman2010}
+Newman, M. (2010).
+\newblock {\em Networks: an introduction}.
+\newblock Oxford University Press.
+
+\bibitem[Spitz and Gertz, 2016]{Spitz2016a}
+Spitz, A. and Gertz, M. (2016).
+\newblock Terms over {LOAD:} leveraging named entities for cross-document
+  extraction and summarization of events.
+\newblock In {\em Proceedings of the 39th International {ACM} {SIGIR}
+  conference on Research and Development in Information Retrieval, {SIGIR}
+  2016, Pisa, Italy, July 17-21, 2016}, pages 503--512.
+
+\end{thebibliography}

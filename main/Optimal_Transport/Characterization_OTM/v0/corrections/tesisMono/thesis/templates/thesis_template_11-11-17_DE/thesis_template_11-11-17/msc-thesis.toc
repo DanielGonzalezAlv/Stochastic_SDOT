@@ -1,0 +1,15 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.4}
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.5}
+\contentsline {section}{\numberline {1.2}Ziele der Arbeit}{1}{section.6}
+\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{1}{section.7}
+\contentsline {chapter}{\numberline {2}Grundlagen und verwandte Arbeiten}{2}{chapter.8}
+\contentsline {section}{\numberline {2.1}(Beispiel) Netzwerke}{2}{section.9}
+\contentsline {section}{\numberline {2.2}(Beispiel) Informationsextraktion}{2}{section.10}
+\contentsline {section}{\numberline {2.3}Verwandte Arbeiten}{2}{section.11}
+\contentsline {chapter}{\numberline {3}Mein Beitrag}{3}{chapter.12}
+\contentsline {section}{\numberline {3.1}\"Uberblick und Zielsetzung}{3}{section.13}
+\contentsline {section}{\numberline {3.2}Erster Teil}{3}{section.14}
+\contentsline {section}{\numberline {3.3}Zweiter Teil}{3}{section.15}
+\contentsline {chapter}{\numberline {4}Experimentelle Evaluation}{4}{chapter.16}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{5}{chapter.17}

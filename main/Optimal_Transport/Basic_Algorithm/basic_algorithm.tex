@@ -1,0 +1,46 @@
+\documentclass[
+     12pt,         % font size
+     a4paper,      % paper format
+     BCOR=10mm,     % binding correction
+     DIV=14,        % stripe size for margin calculation
+%     liststotoc,   % table listing in toc
+%     bibtotoc,     % bibliography in toc
+%     idxtotoc,     % index in toc
+%     parskip       % paragraph skip instad of paragraph indent
+     ]{scrreprt}
+
+\input{../../preamble.tex}
+
+% Avoid Problems by including other files
+\usepackage{standalone}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%
+%   \begin{large}
+%       \noindent \textbf{Notations and Nomenclature} \\
+%       \vspace{1cm}
+%   \end{large}
+%
+%
+\TODO{Something}
+%    We recall some definitions and results from measure theory. 
+%    \bigskip
+
+Image = 256 x 256 x 3 \\
+Over iterations nscales$=4-1 : -1 : 0$
+\begin{enumerate}
+    \item scale image ($2^{iter}$ ) i.e in first iter=3 : $256 / 2^3 =32$
+    \item then generate on with 2 dim more, (i.e scale im with  $256 / 2^2 = 64 $)
+\end{enumerate}
+\begin{itemize}
+    \item In first iteration, i.e iter = 3: estime adsn model on scaled image (32x32x3)
+\end{itemize}
+
+In view auf Multi-scale scaling Approach
+
+\TODO{Something}
+
+\end{document}
+

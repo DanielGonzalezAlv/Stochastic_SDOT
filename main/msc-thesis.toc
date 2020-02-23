@@ -1,0 +1,25 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.7}
+\contentsline {section}{\numberline {1.1}Overview/Motivation}{2}{section.8}
+\contentsline {section}{\numberline {1.2}Related Work}{2}{section.9}
+\contentsline {section}{\numberline {1.3}Contribution/Organization of work}{2}{section.10}
+\contentsline {section}{\numberline {1.4}Background}{2}{section.11}
+\contentsline {chapter}{\numberline {2}Semi-dicrete Optimal Transport}{3}{chapter.12}
+\contentsline {section}{\numberline {2.1}Problem}{3}{section.14}
+\contentsline {section}{\numberline {2.2}Approach}{3}{section.16}
+\contentsline {section}{\numberline {2.3}Characterization of the Optimal Transport Map}{4}{section.18}
+\contentsline {section}{\numberline {2.4}Basic Algorithm}{11}{section.39}
+\contentsline {chapter}{\numberline {3}Multi-Layer Approach}{12}{chapter.44}
+\contentsline {section}{\numberline {3.1}To Define, Muli-scale?}{12}{section.45}
+\contentsline {section}{\numberline {3.2}Algorithm (ASGD)}{14}{section.55}
+\contentsline {chapter}{\numberline {4}Application: Texture Synthesis}{15}{chapter.56}
+\contentsline {section}{\numberline {4.1}Patch distributions}{15}{section.57}
+\contentsline {subsection}{\numberline {4.1.1}Source Distribution}{15}{subsection.58}
+\contentsline {subsubsection}{\nonumberline Gaussian Random Fields (Gaussian Synthesis)}{15}{section*.59}
+\contentsline {subsubsection}{\nonumberline Gaussian Mixture Models}{15}{section*.60}
+\contentsline {subsubsection}{\nonumberline Gaussian patches distribution and properties}{15}{section*.61}
+\contentsline {subsection}{\numberline {4.1.2}Target Distribution}{15}{subsection.62}
+\contentsline {subsubsection}{\nonumberline Emprirical patch distribution and simplifications}{15}{section*.63}
+\contentsline {section}{\numberline {4.2}Optimal Transport in Patch Space}{15}{section.64}
+\contentsline {subsection}{\numberline {4.2.1}Local Transformations (Patch convolutions)}{15}{subsection.65}
+\contentsline {chapter}{\numberline {5}Conclusion}{16}{chapter.66}

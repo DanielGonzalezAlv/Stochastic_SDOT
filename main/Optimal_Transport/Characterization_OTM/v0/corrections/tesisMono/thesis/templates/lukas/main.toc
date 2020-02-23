@@ -1,0 +1,10 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\babel@toc {english}{}
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Einleitung}{5}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Grundlegende Aussagen über Ringe}{6}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Eigenschaften von $\Z $}{6}{subsection.1.1}
