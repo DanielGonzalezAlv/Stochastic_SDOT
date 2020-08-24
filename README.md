@@ -1,6 +1,6 @@
-## A Stochastic Approach for Two-layer Semi-discrete Optimal Transport
+# A Stochastic Approach for Two-layer Semi-discrete Optimal Transport
 
-# Abstract
+### Abstract
 The semi-discrete optimal transport problem arises in numerous applications as a natural way to 
 calculate differences between two given measures. However, the computational burden
 to handle this problem tends to hinder practicable realizations, especially when 
